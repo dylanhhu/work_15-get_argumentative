@@ -8,7 +8,7 @@ char ** parse_args(char *line);
 
 
 int main() {
-    char args[100] = "ls -a -l";
+    char args[] = "ls -a -l";
     execvp("ls", parse_args(args));
 
     return 0;
