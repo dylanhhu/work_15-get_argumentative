@@ -16,7 +16,7 @@ int main() {
 
 
 char ** parse_args(char *line) {
-    char **arg_array = malloc(5 * sizeof(char *)); // assuming less than 5 args
+    char **arg_array = calloc(5, sizeof(char *)); // assuming less than 5 args
     
     char *curr = line;
     char *token;
